@@ -18,12 +18,13 @@
 body {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto 1fr auto;
   background-color: var(--light);
 }
 
 header {
   position: sticky;
+  top: 22px;
   height: fit-content;
   margin: 22px;
   padding: 22px;
@@ -53,7 +54,15 @@ a {
   cursor: pointer;
 }
 
+main {
+  margin: 0 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px
+}
+
 footer {
   min-height: 120px;
+  margin-top: 22px;
   background-color: var(--darkGreen);
 }

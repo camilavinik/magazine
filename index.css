@@ -1,0 +1,24 @@
+.carousel-container {
+  background-color: red;
+  width: 100%;
+  height: 360px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.news-column {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 0 11px;
+    /* TODO: remove this height */
+    height: 500vh;
+}
+
+.middle-column {
+    border-left: solid var(--darkGreen) 3px;
+    border-right: solid var(--darkGreen) 3px;
+}
