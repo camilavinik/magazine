@@ -6,6 +6,27 @@
   padding: 0 22px;
 }
 
+.dots-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -12px;
+}
+
+.carousel-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--darkGreen);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.carousel-dot.selected {
+  background-color: var(--darkGreen);
+}
+
 .banner-img {
   width: 100%;
   height: auto;

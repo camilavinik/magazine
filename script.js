@@ -22,3 +22,18 @@ articles.forEach(({ img, img_description, title, abstract }, index) => {
   const column = getColumn(index);
   renderArticlePreview(column, img, img_description, title, abstract);
 });
+
+const dots = document.getElementsByClassName("carousel-dot")
+const dotsArray = Array.from(dots)
+
+const onDotClick = (dot) => {
+  dotsArray.forEach(d => {
+    d.classList.remove('selected')
+  })
+  dot.classList.add('selected')
+  
+}
+
+dotsArray.forEach(d => {
+  d.addEventListener("click", () => onDotClick(d));
+})
