@@ -1,0 +1,23 @@
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 22px;
+}
+
+.main-article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 0 22px;
+}
+
+img {
+    width: 100%;
+}
+
+#articlesColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-left: 22px;
+}
