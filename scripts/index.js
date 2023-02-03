@@ -21,12 +21,11 @@ const renderArticlePreview = (
   abstract,
   id
 ) => {
-  const articlePreview = `<a href="./pages/article.html?id=${id}">
-  <div class="preview-art-container">
+  const articlePreview = `
+  <a href="./pages/article.html?id=${id}" class="preview-art-container">
     <img class="preview-art-image" src="${img}" alt="${imgDescription}"/>
     <h2 class="title preview-art-title">${title}</h2>
     <p>${abstract}</p>
-  </div>
   </a>`;
 
   column.innerHTML += articlePreview;
