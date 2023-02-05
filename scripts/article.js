@@ -48,10 +48,31 @@ const renderArticlePreview = (
     articlesColumn.innerHTML += articlePreview;
 };
 
-// Render first five articles
+// Select five random articles
+const randomIds = []
+const ids = articles.map((art) => art.id)
+
+// Recursive unique random generator function
+const randomIdSelector = () => {
+  const randomIndex = Math.floor(Math.random()* (ids.length - 1))
+  const selectedRandomId = ids[randomIndex]
+
+  // If it is already in the random id list, find another one
+  if (randomIds.includes(selectedRandomId)) return randomIdSelector()
+
+  // Return random id
+  return selectedRandomId
+}
+
+// Add five random Ids to randomIds
+for (let i = 0; i < 5; i++) {
+  randomIds.push(randomIdSelector())
+}
+
+// Render five random articles
 // The articles array is defined in data/articles.js
 for (let i = 0; i < 5; i++) {
-    const {id, img, img_description, title, abstract} = articles[i]
+    const {id, img, img_description, title, abstract} = articles[randomIds[i]]
     // Add it to the HTML if it is not the main article
     if (id !== articleId) {
         renderArticlePreview(img, img_description, title, abstract, id);
