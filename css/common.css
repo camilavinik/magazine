@@ -45,6 +45,13 @@ header {
 }
 
 .logo {
+  color: var(--darkGreen);
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.logo-text {
   font-size: 22px;
 }
 
@@ -56,6 +63,27 @@ nav {
 
 a {
   cursor: pointer;
+}
+
+.search-container {
+  color: var(--black);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.search {
+  border: none;
+  border-bottom: 1px solid var(--black)
+}
+
+.search:focus {
+  outline: none;
+  border-bottom: 1px solid var(--darkGreen);
+}
+
+.search:focus + .fa-magnifying-glass {
+  color: var(--darkGreen);
 }
 
 main {
