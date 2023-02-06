@@ -15,9 +15,15 @@ img {
     width: 100%;
 }
 
-#articlesColumn {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    padding-left: 22px;
+.articles-column {
+    padding-right: 22px;
 }
+
+.preview-art-container {
+    width: 100%;
+    margin: 0
+}
+
+.preview-art-title {
+    font-size: 1.5rem;
+  }

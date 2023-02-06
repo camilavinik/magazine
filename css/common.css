@@ -65,6 +65,44 @@ main {
   gap: 22px
 }
 
+.articles-column {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+
+.articles-column > .preview-art-container:first-child {
+  border: none;
+  padding-top: 0;
+}
+
+.middle-column {
+  border-left: solid var(--darkGreen) 3px;
+  border-right: solid var(--darkGreen) 3px;
+}
+
+.preview-art-container {
+  width: calc(100% - 44px);
+  cursor: pointer;
+  margin: 0 22px;
+  padding-top: 22px;
+  border-top: solid var(--darkGreen) 3px;
+}
+
+.preview-art-container:hover .preview-art-title {
+  text-decoration: underline;
+}
+
+.preview-art-image {
+  width: 100%;
+}
+
+.preview-art-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
 footer {
   min-height: 120px;
   margin-top: 22px;
