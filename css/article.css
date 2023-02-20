@@ -1,29 +1,29 @@
 main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 22px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 22px;
 }
 
 .main-article-container {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 0 22px;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .articles-column {
-    padding-right: 22px;
+  padding-right: 22px;
 }
 
 .preview-art-container {
-    width: 100%;
-    margin: 0
+  width: 100%;
+  margin: 0;
 }
 
 .preview-art-title {
-    font-size: 1.5rem;
-  }
+  font-size: 1.5rem;
+}
