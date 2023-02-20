@@ -57,12 +57,21 @@ header {
 
 nav {
   display: flex;
+  align-items: flex-end;
   gap: 44px;
   color: var(--darkGreen);
 }
 
 a {
   cursor: pointer;
+}
+
+.nav-item:hover {
+  color: var(--darkGreen)
+}
+
+.selected {
+  color: var(--darkGreen);
 }
 
 .search-container {
@@ -74,7 +83,8 @@ a {
 
 .search {
   border: none;
-  border-bottom: 1px solid var(--black)
+  border-bottom: 1px solid var(--black);
+  padding-left: 2px;
 }
 
 .search:focus {
