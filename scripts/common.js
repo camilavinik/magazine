@@ -2,10 +2,15 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
-// Search
-const searchButton = document.getElementById("searchButton")
+// Determine base url
+const url = window.location.href;
+const baseUrl = url.includes("/pages") ? "" : "pages/";
 
-searchButton.onclick = function(){
-  const searchBarInputValue = document.getElementById("searchBarInput").value
-  if (searchBarInputValue) window.location.href = `pages/searchResults.html?search=${searchBarInputValue}`
+// Search
+const searchButton = document.getElementById("searchButton");
+
+searchButton.onclick = function () {
+  const searchBarInputValue = document.getElementById("searchBarInput").value;
+  if (searchBarInputValue)
+    window.location.href = `${baseUrl}searchResults.html?search=${searchBarInputValue}`;
 };
