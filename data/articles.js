@@ -5,7 +5,8 @@ const articles = [
         img_description: "Tiny kitten",
         title: "A super important article title about Kittens.",
         abstract: "Lorem ipsum dolor sit amet. Quibusdam magnam dicta, sit ex explicabo, suscipit perferendis porro eveniet cumque nostrum sapiente dolorem exercitationem eius fuga inventore a alias, temporibus pariatur.",
-        main_article: ""
+        main_article: "",
+        tags: ['search test', 'cats', 'dog']
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const articles = [
         img_description: "Dog playing with toys",
         title: "A super important article title about Dogs.",
         abstract: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam dicta, sit ex explicabo, suscipit perferendis porro eveniet cumque nostrum sapiente dolorem exercitationem eius fuga inventore a alias, temporibus pariatur.",
-        main_article: ""
+        main_article: "",
+        tags: ['dog']
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const articles = [
         img_description: "Brown chihuahua",
         title: "A super important article title about Dogs.",
         abstract: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam dicta, suscipit perferendis porro eveniet exercitationem eius fuga inventore a alias, temporibus pariatur.",
-        main_article: ""
+        main_article: "",
+        tags: []
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const articles = [
         img_description: "Happy dog",
         title: "A super important article title about Dogs.",
         abstract: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam dicta, sit ex explicabo, suscipit perferendis fuga inventore a alias, temporibus pariatur.",
-        main_article: ""
+        main_article: "",
+        tags: []
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ const articles = [
         img_description: "A girl and a white dog",
         title: "A super important article title about Dogs.",
         abstract: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam dicta, sit ex explicabo, suscipit perferendis porro eveniet cumque nostrum sapiente dolorem exercitationem eius fuga inventore a alias, temporibus pariatur.",
-        main_article: ""
+        main_article: "",
+        tags: []
     },
     {
         id: 6,
@@ -45,6 +50,7 @@ const articles = [
         img_description: "Funny cat",
         title: "A super important article title about Cats.",
         abstract: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam dicta, sit ex explicabo, suscipit perferendis porro eveniet cumque nostrum sapiente dolorem exercitationem eius fuga inventore a alias, temporibus pariatur.",
-        main_article: ""
+        main_article: "",
+        tags: []
     },
 ]

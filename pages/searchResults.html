@@ -11,10 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Ledger&family=Work+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/92c4329b97.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/92c4329b97.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/article.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/searchResults.css" />
+    <title>Search Results</title>
   </head>
   <body>
     <header>
@@ -27,23 +31,29 @@
         <a href="./aboutUs.html"><p class="nav-item">About us</p></a>
         <a href="./contact.html"><p class="nav-item">Contact</p></a>
         <div class="search-container">
-          <input class="search"/>
+          <input class="search" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </nav>
     </header>
-    <main>
-      <div class="main-article-container">
-        <h1 id="title" class="title"></h1>
-        <p id="abstract"></p>
-        <img id="image" />
-        <p id="mainArticle"></p>
-      </div>
-      <div id="articlesColumn" class="articles-column"></div>
+    <main id="main">
+      <script id="searchTitleTemplate" type="template/handlebars">
+        <h1 class="title page-title">search results for: "{{search}}"</h1>
+      </script>
+      <!-- Multiple articles may be rendered, not only the following template -->
+      <script id="searchResultTemplate" type="template/handlebars">
+        <a class="result-art-container" href="./article.html?id={{id}}">
+          <img src="{{img}}"/>
+          <div>
+            <h3 class="title">{{title}}</h3>
+            <p>{{abstract}}</p>
+          </div>
+        </a>
+      </script>
     </main>
     <footer></footer>
   </body>
   <script src="../data/articles.js"></script>
   <script src="../scripts/common.js"></script>
-  <script src="../scripts/article.js"></script>
+  <script src="../scripts/searchResults.js"></script>
 </html>

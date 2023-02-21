@@ -1,7 +1,4 @@
 // Get id from query params
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-
 const articleId = parseInt(urlParams.get('id'))
 
 // Get article with id
