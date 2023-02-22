@@ -10,8 +10,10 @@ const baseUrl = url.includes("/pages") ? "" : "pages/";
 const searchForm = document.getElementById("searchForm");
 
 searchForm.onsubmit = function (e) {
-  e.preventDefault();
+  e.preventDefault(); // Avoid page reload after submit
   const searchBarInputValue = searchForm.elements[0].value;
-  if (searchBarInputValue)
+  if (searchBarInputValue) {
+    // Redirect to search results page with input value
     window.location.href = `${baseUrl}searchResults.html?search=${searchBarInputValue}`;
+  }
 };
