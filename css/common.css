@@ -72,7 +72,7 @@ a {
 }
 
 .nav-item:hover {
-  color: var(--darkGreen)
+  color: var(--darkGreen);
 }
 
 .selected {
@@ -101,11 +101,16 @@ a {
   color: var(--darkGreen);
 }
 
+.search-button {
+  border: none;
+  background-color: transparent;
+}
+
 main {
   margin: 0 22px;
   display: flex;
   flex-direction: column;
-  gap: 22px
+  gap: 22px;
 }
 
 .articles-column {
@@ -113,7 +118,6 @@ main {
   flex-direction: column;
   gap: 22px;
 }
-
 
 .articles-column > .preview-art-container:first-child {
   border: none;

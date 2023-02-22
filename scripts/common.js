@@ -7,10 +7,11 @@ const url = window.location.href;
 const baseUrl = url.includes("/pages") ? "" : "pages/";
 
 // Search
-const searchButton = document.getElementById("searchButton");
+const searchForm = document.getElementById("searchForm");
 
-searchButton.onclick = function () {
-  const searchBarInputValue = document.getElementById("searchBarInput").value;
+searchForm.onsubmit = function (e) {
+  e.preventDefault();
+  const searchBarInputValue = searchForm.elements[0].value;
   if (searchBarInputValue)
     window.location.href = `${baseUrl}searchResults.html?search=${searchBarInputValue}`;
 };
