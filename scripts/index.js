@@ -39,15 +39,28 @@ articles.forEach(({ img, img_description, title, abstract, id }, index) => {
   renderArticlePreview(column, img, img_description, title, abstract, id);
 });
 
-// Render carousel
+// Carousel
 const dots = document.getElementsByClassName("carousel-dot");
 const dotsArray = Array.from(dots);
+
+const carousel = document.getElementById("carouselContainer");
+const banners = document.querySelectorAll(".banner-container");
+
+// Variable to know current slide
+let current = 0;
 
 const onDotClick = (dot) => {
   dotsArray.forEach((d) => {
     d.classList.remove("selected");
   });
   dot.classList.add("selected");
+
+  // Set current banner to number of dot selected
+  current = parseInt(dot.id);
+
+  banners.forEach((banner) => {
+    banner.style.transform = `translateX(-${100 * (current - 1)}%)`;
+  });
 };
 
 dotsArray.forEach((d) => {
