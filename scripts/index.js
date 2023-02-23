@@ -32,12 +32,29 @@ const renderArticlePreview = (
 };
 
 // The articles array is defined in data/articles.js
-articles.forEach(({ img, img_description, title, abstract, id }, index) => {
+// Create new array same as articles to separate banners from articles
+const filteredArticles = [...articles];
+// Remove first three elements and save them as bannersData, now filteredArticles dont have those
+const bannersData = filteredArticles.splice(0,3);
+
+// Render filtered articles
+filteredArticles.forEach(({ img, img_description, title, abstract, id }, index) => {
   // Set a column
   const column = getColumn(index);
   // Add it to the HTML
   renderArticlePreview(column, img, img_description, title, abstract, id);
 });
+
+// Set Banners as first three articles
+// Render template and add it to the HTML
+const renderedBanner = document.getElementById("bannerTemplate").innerHTML;
+const renderedBannerTemplate = Handlebars.compile(renderedBanner);
+
+// For the banners: render template and add it to the HTML
+bannersData.forEach(({img, title}) => {
+  const renderedBanner = renderedBannerTemplate({ img, title });
+  document.getElementById("carouselContainer").innerHTML += renderedBanner;
+})
 
 // Carousel
 const dots = document.getElementsByClassName("carousel-dot");

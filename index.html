@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/92c4329b97.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Magazine</title>
@@ -39,28 +40,15 @@
     </header>
     <main>
       <div class="carousel-container" id="carouselContainer">
-        <!-- TODO: finish carousel -->
+        <script id="bannerTemplate" type="template/handlebars">
         <div class="banner-container">
           <img
             class="banner-img"
-            src="https://img.freepik.com/premium-photo/cat-faces-peek-out-from-blanket-cute-funny-kittens-couple-family-cats-portrait-white-surface-cats-watch-side-long-web-banner-with-copy-space_221542-1303.jpg?w=2000"
+            src={{img}}
           />
-          <h1 class="banner-title title">This is a banner that has a title</h1>
+          <h1 class="banner-title title">{{title}}</h1>
         </div>
-        <div class="banner-container">
-          <img
-            class="banner-img"
-            src="https://img.freepik.com/premium-photo/cat-faces-peek-out-from-blanket-cute-funny-kittens-couple-family-cats-portrait-white-surface-cats-watch-side-long-web-banner-with-copy-space_221542-1303.jpg?w=2000"
-          />
-          <h1 class="banner-title title">This is a banner that has a title</h1>
-        </div>
-        <div class="banner-container">
-          <img
-            class="banner-img"
-            src="https://img.freepik.com/premium-photo/cat-faces-peek-out-from-blanket-cute-funny-kittens-couple-family-cats-portrait-white-surface-cats-watch-side-long-web-banner-with-copy-space_221542-1303.jpg?w=2000"
-          />
-          <h1 class="banner-title title">This is a banner that has a title</h1>
-        </div>
+      </script>
       </div>
       <div class="dots-container">
         <button class="carousel-dot selected" id="0"/>
