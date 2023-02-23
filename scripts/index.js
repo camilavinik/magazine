@@ -48,21 +48,41 @@ const banners = document.querySelectorAll(".banner-container");
 
 // Variable to know current slide
 let current = 0;
+let nextBanner = 1;
 
-const onDotClick = (dot) => {
+// Start timeout to next banner in 10 seconds
+let carouselTimeout = setTimeout(
+  () => changeBanner(dotsArray[nextBanner]),
+  15000
+);
+
+function changeBanner(dot) {
+  // Clear timeout in case there is one running
+  clearTimeout(carouselTimeout);
+
+  // Set current banner to number of dot selected
+  current = parseInt(dot.id);
+  // Calculate next banner index
+  nextBanner = current + 1 > 2 ? 0 : current + 1;
+
+  // Unselect all dots and select current
   dotsArray.forEach((d) => {
     d.classList.remove("selected");
   });
   dot.classList.add("selected");
 
-  // Set current banner to number of dot selected
-  current = parseInt(dot.id);
-
+  // Slide effect
   banners.forEach((banner) => {
-    banner.style.transform = `translateX(-${100 * (current - 1)}%)`;
+    banner.style.transform = `translateX(-${100 * current}%)`;
   });
-};
 
-dotsArray.forEach((d) => {
-  d.addEventListener("click", () => onDotClick(d));
+  // Timeout to next banner in 10 seconds
+  carouselTimeout = setTimeout(
+    () => changeBanner(dotsArray[nextBanner]),
+    15000
+  );
+}
+
+dotsArray.forEach((dot) => {
+  dot.addEventListener("click", () => changeBanner(dot));
 });
