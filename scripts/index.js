@@ -51,8 +51,8 @@ const renderedBanner = document.getElementById("bannerTemplate").innerHTML;
 const renderedBannerTemplate = Handlebars.compile(renderedBanner);
 
 // For the banners: render template and add it to the HTML
-bannersData.forEach(({img, title}) => {
-  const renderedBanner = renderedBannerTemplate({ img, title });
+bannersData.forEach(({img, title, id}) => {
+  const renderedBanner = renderedBannerTemplate({ img, title, id });
   document.getElementById("carouselContainer").innerHTML += renderedBanner;
 })
 
