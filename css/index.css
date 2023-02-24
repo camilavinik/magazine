@@ -44,6 +44,7 @@
   padding: 22px;
   max-width: 40%;
   top: 0;
+  text-shadow: -1px -1px 0 var(--light), 1px -1px 0 var(--light), -1px 1px 0 var(--light), 1px 1px 0 var(--light);
 }
 
 .main-content {
