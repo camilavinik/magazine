@@ -47,7 +47,15 @@
           <p>{{mainArticle}}</p>
         </script>
       </div>
-      <div id="articlesColumn" class="articles-column"></div>
+      <div id="articlesColumn" class="articles-column">
+        <script type="template/handlebars" id="suggestedArticleTemplate">
+          <a href="./article.html?id={{id}}" class="preview-art-container">
+            <img class="preview-art-image" src="{{img}}" alt="{{imgDescription}}"/>
+            <h2 class="title preview-art-title">{{title}}</h2>
+            <p>{{abstract}}</p>
+          </a>
+        </script>
+      </div>
     </main>
     <footer></footer>
   </body>

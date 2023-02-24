@@ -11,7 +11,6 @@ const articleTemplate = document.getElementById(
 ).innerHTML;
 const articleTemplateCompiled = Handlebars.compile(articleTemplate);
 
-
 // Render template and add it to the HTML
 const articleTemplateRendered = articleTemplateCompiled({
   title: article.title,
@@ -25,16 +24,25 @@ document.getElementById("mainArticle").innerHTML += articleTemplateRendered;
 // Get other articles column
 const articlesColumn = document.getElementById("articlesColumn");
 
-// Function to add the article to the HTML
-const renderArticlePreview = (img, imgDescription, title, abstract, id) => {
-  const articlePreview = `
-    <a href="./article.html?id=${id}" class="preview-art-container">
-      <img class="preview-art-image" src="${img}" alt="${imgDescription}"/>
-      <h2 class="title preview-art-title">${title}</h2>
-      <p>${abstract}</p>
-    </a>`;
+// Get handlebars article template
+const suggestedArticleTemplate = document.getElementById(
+  "suggestedArticleTemplate"
+).innerHTML;
+const suggestedArticleTemplateCompiled = Handlebars.compile(
+  suggestedArticleTemplate
+);
 
-  articlesColumn.innerHTML += articlePreview;
+const renderArticlePreview = (img, img_description, title, abstract, id) => {
+  // Render template and add it to the HTML
+  const suggestedArticleTemplateRendered = suggestedArticleTemplateCompiled({
+    img,
+    imgDescription: img_description,
+    title,
+    abstract,
+    id,
+  });
+  document.getElementById("articlesColumn").innerHTML +=
+    suggestedArticleTemplateRendered;
 };
 
 // Select five random articles
