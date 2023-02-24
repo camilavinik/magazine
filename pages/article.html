@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/92c4329b97.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/article.css" />
     <title>Document</title>
@@ -38,11 +39,13 @@
       </nav>
     </header>
     <main>
-      <div class="main-article-container">
-        <h1 id="title" class="title"></h1>
-        <p id="abstract"></p>
-        <img id="image" />
-        <p id="mainArticle"></p>
+      <div class="main-article-container" id="mainArticle">
+        <script type="template/handlebars" id="mainArticleTemplate">
+          <h1 class="title">{{title}}</h1>
+          <p>{{abstract}}</p>
+          <img src={{img}} alt={{imgDescription}} />
+          <p>{{mainArticle}}</p>
+        </script>
       </div>
       <div id="articlesColumn" class="articles-column"></div>
     </main>
