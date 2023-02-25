@@ -55,8 +55,8 @@ const articles = [
     img_description: "Cat after shower",
     title: "5 tricks to bathe your cat (and not die trying).",
     abstract:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam dicta, sit ex explicabo, suscipit perferendis porro eveniet cumque nostrum sapiente dolorem exercitationem eius fuga inventore a alias, temporibus pariatur.",
-    main_article: "",
+      "Bathing a cat can be a complicated task, but with these tricks you will see how easy it can be.",
+    main_article: "<strong>1. Prepare the bathroom.</strong><br>It is important that there is enough space so that both you and the cat are comfortable, it is also important that you have everything you need for this task at hand.<br><br><strong>2. Prepare to be patient</strong><br>Bathing a cat is not easy if you are not used to it (or neither is he), but you must transmit calm and security to your cat, so try to be patient and calm with him.<br> <br><strong>3. Brush him before bathing.</strong><br>This helps remove both knots and excess hair. You can also do this the day before to avoid stressing your cat too much.<br><br><strong>4. Protect his ears.</strong><br>Before taking him into the water, cover his ears with cotton to prevent liquid from entering him, use warm water and never submerge him.<br><br><strong>5. Choose the day wisely.</strong><br>It is important that the cat is not nervous from before, since the bath will be enough stress. So if your cat is not calm or is emotionally sensitive, we recommend postponing the bath. It is also important that you comfort your cat for this.<br><br>We promise that by implementing these 5 tricks, the bathing day will be much more enjoyable.",
     tags: [],
   },
   {
