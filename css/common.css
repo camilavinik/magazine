@@ -215,6 +215,11 @@ footer {
     gap: 11px;
   }
 
+  .page-title {
+    font-size: 2em;
+    text-align: center;
+  }
+
   .articles-column {
     gap: 11px;
   }
@@ -241,8 +246,8 @@ footer {
   }
 }
 
-/* RESPONSIVE DESIGN FOR TABLETS */
-@media (max-width: 480) {
+/* RESPONSIVE DESIGN FOR PHONES */
+@media (max-width: 480px) {
   #nav {
     width: 100%;
   }

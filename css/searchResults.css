@@ -6,12 +6,33 @@ main {
 
 .result-art-container {
     display: flex;
-    gap: 24px;
-    padding: 24px;
+    gap: 22px;
+    padding: 22px;
     background-color: var(--white);
     border-radius: 8px;
 }
 
 img {
+    object-fit: cover;
     width: 120px;
+}
+
+/* RESPONSIVE DESIGN FOR TABLETS */
+@media (max-width: 768px) {
+    .result-art-container {
+        gap: 11px;
+        padding: 11px;
+    }
+
+    img {
+        width: 80px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }
