@@ -5,6 +5,7 @@ main {
 }
 
 .result-art-container {
+    width: 100%;
     display: flex;
     gap: 22px;
     padding: 22px;
