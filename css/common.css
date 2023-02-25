@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-weight: 300;
+}
+
 body {
   display: grid;
   min-height: 100vh;
