@@ -5,6 +5,9 @@ const articleId = parseInt(urlParams.get("id"));
 // Articles array is in ../data/articles.js
 const article = articles.find((art) => art.id === articleId);
 
+// If article doesnt exist, redirect to not found page
+if (!article) window.location.href = `${baseUrl}notFound.html`
+
 // Get handlebars article template
 const articleTemplate = document.getElementById(
   "mainArticleTemplate"
