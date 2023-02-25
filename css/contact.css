@@ -61,3 +61,10 @@ textarea {
 #submitButton:hover {
     background-color: var(--darkGreen);
 }
+
+/* RESPONSIVE DESIGN FOR TABLETS */
+@media (max-width: 768px) {
+    .form-container, .input-row {
+        gap: 11px;
+    }
+}
