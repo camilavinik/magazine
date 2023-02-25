@@ -41,17 +41,17 @@
     <main>
       <div class="carousel-container" id="carouselContainer">
         <script id="bannerTemplate" type="template/handlebars">
-        <a href="./pages/article.html?id={{id}}" class="banner-container">
-          <img
-            class="banner-img"
-            src={{img}}
-          />
-          <h1 class="banner-title title">{{title}}</h1>
-        </a>
-      </script>
+          <a href="./pages/article.html?id={{id}}" class="banner-container">
+            <img
+              class="banner-img"
+              src={{img}}
+            />
+            <h1 class="banner-title title">{{title}}</h1>
+          </a>
+        </script>
       </div>
       <div class="dots-container">
-        <button class="carousel-dot selected" id="0"/>
+        <button class="carousel-dot selected" id="0" />
         <button class="carousel-dot" id="1" />
         <button class="carousel-dot" id="2" />
       </div>
@@ -67,7 +67,17 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-info">
+        <i class="fa-solid fa-phone"></i>
+        <p>+598 983 303 945</p>
+      </div>
+      <p class="copyright">MAGAZINE 2023 ©</p>
+      <div class="footer-info">
+        <i class="fa-solid fa-envelope"></i>
+        <p>contact@magazine.com</p>
+      </div>
+    </footer>
   </body>
   <script src="data/articles.js"></script>
   <script src="scripts/common.js"></script>

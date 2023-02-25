@@ -151,7 +151,23 @@ main {
 }
 
 footer {
-  min-height: 120px;
+  width: 100%;
+  padding: 22px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 22px;
   background-color: var(--darkGreen);
+  color: var(--light);
+  text-align: center;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copyright {
+  font-size: 0.7rem;
 }
