@@ -7,8 +7,12 @@ const thirdColumn = document.getElementById("thirdColumn");
 
 // Function which returns the column in which the article should be based on index
 const getColumn = (index) => {
-  if (index % 3 === 0) return firstColumn;
-  if (index % 3 === 1) return secondColumn;
+  let numberOfColumns = 3;
+  if (isTabletWidth) numberOfColumns = 2
+  if (isMobileWidth) numberOfColumns = 1
+
+  if (index % numberOfColumns === 0) return firstColumn;
+  if (index % numberOfColumns === 1) return secondColumn;
   return thirdColumn;
 };
 

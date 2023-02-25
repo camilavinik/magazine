@@ -1,3 +1,7 @@
+// SET CONSTANTS TO DETERMINE DEVICE TYPE
+const isTabletWidth = window.innerWidth <= 768
+const isMobileWidth = window.innerWidth <= 480
+
 // Access to url params
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -17,3 +21,16 @@ searchForm.onsubmit = function (e) {
     window.location.href = `${baseUrl}searchResults.html?search=${searchBarInputValue}`;
   }
 };
+
+// DISPLAY MENU ON RESPONSIVE DESIGN
+if (isTabletWidth) {
+  const menuButton = document.getElementById("menuButton");
+  const nav = document.getElementById("nav");
+
+  let menuIsOpen = false;
+
+  menuButton.onclick = () => {
+    nav.style.height = menuIsOpen ? "0" : "128px";
+    menuIsOpen = !menuIsOpen;
+  };
+}

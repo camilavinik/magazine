@@ -1,3 +1,4 @@
+/* GLOBAL VARIABLES */
 :root {
   --black: #000000;
   --white: #ffffff;
@@ -6,6 +7,7 @@
   --green: #9db5b2;
 }
 
+/* STYLING ALL ELEMENTS FOR EASIER USAGE */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,6 +27,7 @@ body {
   background-color: var(--light);
 }
 
+/* HEADER (INCLUDING NAVIGATION) */
 header {
   position: sticky;
   z-index: 1000;
@@ -37,6 +40,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.responsive-menu-btn {
+  display: none;
 }
 
 .title {
@@ -106,6 +113,7 @@ a {
   background-color: transparent;
 }
 
+/* MAIN CONTENT */
 main {
   margin: 0 22px;
   display: flex;
@@ -113,6 +121,7 @@ main {
   gap: 22px;
 }
 
+/* ARTICLES COLUMNS AND ARTICLES PREVIEW */
 .articles-column {
   display: flex;
   flex-direction: column;
@@ -150,6 +159,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
+/* FOOTER */
 footer {
   width: 100%;
   padding: 22px;
@@ -170,4 +180,34 @@ footer {
 
 .copyright {
   font-size: 0.7rem;
+}
+
+/* RESPONSIVE DESIGN FOR TABLETS */
+@media (max-width: 768px) {
+  #nav {
+    position: absolute;
+    height: 0;
+    right: 0;
+    top: 65px;
+    display: flex;
+    padding: 0 22px 0 22px;
+    border-radius: 0 0 8px 8px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    background-color: var(--white);
+    transition: all 0.7s ease;
+    overflow: hidden;
+  }
+
+  .responsive-menu-btn {
+    display: block;
+  }
+}
+
+/* RESPONSIVE DESIGN FOR TABLETS */
+@media (max-width: 480) {
+  #nav {
+    width: 100%
+  }
 }
