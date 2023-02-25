@@ -45,7 +45,7 @@ textarea {
     height: 150px;
 }
 
-#submitButton {
+.submit-button {
     cursor: pointer;
     width: 35%;
     padding: 0.5rem;
@@ -58,7 +58,7 @@ textarea {
     margin: auto;
 }
 
-#submitButton:hover {
+.submit-button:hover {
     background-color: var(--darkBlue);
 }
 

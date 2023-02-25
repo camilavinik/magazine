@@ -39,27 +39,27 @@
     </header>
     <main>
       <h1 class="title page-title">contact</h1>
-      <div class="form-container">
+      <form class="form-container">
         <div class="input-row">
           <div class="input-container">
             <label>Name</label>
-            <input class="input" placeholder="Scooby" />
+            <input class="input" placeholder="Scooby" required/>
           </div>
           <div class="input-container">
             <label>Surname</label>
-            <input class="input" placeholder="Dooby Doo" />
+            <input class="input" placeholder="Dooby Doo" required/>
           </div>
         </div>
         <div class="input-container">
           <label>Email</label>
-          <input class="input" placeholder="scoobydoobydoo@mystery.com" />
+          <input type="email" class="input" placeholder="scoobydoobydoo@mystery.com" required/>
         </div>
         <div class="input-container">
           <label>Message</label>
-          <textarea class="input" placeholder="Write here..."></textarea>
+          <textarea class="input" placeholder="Write here..." required></textarea>
         </div>
-        <button id="submitButton">Send</button>
-      </div>
+        <button class="submit-button">Send</button>
+      </form>
     </main>
     <footer>
       <div class="footer-info">
