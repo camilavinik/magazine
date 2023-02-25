@@ -77,7 +77,7 @@ const articles = [
     abstract:
       "Today we are going to tell the story of Chiquito, the dog that rescued his owner from a fire.",
     main_article: "Its owner was peacefully sleeping while a short circuit generated began to make ashes in his home. Between the exhaustion and the toxic fumes from the fire, the man was sleeping in his bed.<br><br>Luckily, Chiquito somehow knew the danger they were running, so he forced his way into the room to wake up its owner.<br><br><strong>'He was outside, I don't know how he managed to break the window and get in, but he passed by and made me fall out of bed'</strong><br><br>Small achievement he dragged his owner to the dining room and made him wake up with blows and licks, when his owner became conscious, he was able to ask the neighbors for help to get out of the house, since he could not open the door.<br><br> Little after that, not enough to have managed to get out of the fire with its owner, he went back in to rescue the cat that also lived with the two of them, he took it in his mouth and ran outside.<br><br> Now the three meet safe thanks to Chiquito.",
-    tags: ['hero', 'dog', 'fire', 'superhero', 'cat', 'save', 'owner'],
+    tags: ['hero', 'dog', 'fire', 'superhero', 'save', 'owner'],
   },
   {
     id: 9,
