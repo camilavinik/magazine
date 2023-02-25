@@ -19,13 +19,13 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  border: 2px solid var(--darkGreen);
+  border: 2px solid var(--darkBlue);
   background-color: transparent;
   cursor: pointer;
 }
 
 .carousel-dot.selected {
-  background-color: var(--darkGreen);
+  background-color: var(--darkBlue);
 }
 
 .banner-container {

@@ -23,7 +23,7 @@ main {
 }
 
 .input-container label{
-    color: var(--darkGreen);
+    color: var(--darkBlue);
     margin: 4px;
 }
 
@@ -37,7 +37,7 @@ main {
 }
 
 .input:focus {
-    outline: 2px solid var(--green)
+    outline: 2px solid var(--blue)
 }
 
 textarea {
@@ -53,13 +53,13 @@ textarea {
     border-radius: 4px;
     font-size: 1rem;
     color: var(--white);
-    background-color: var(--green);
+    background-color: var(--blue);
     transition: .3s;
     margin: auto;
 }
 
 #submitButton:hover {
-    background-color: var(--darkGreen);
+    background-color: var(--darkBlue);
 }
 
 /* RESPONSIVE DESIGN FOR TABLETS */

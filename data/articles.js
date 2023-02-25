@@ -28,7 +28,7 @@ const articles = [
     },
     {
         id: 4,
-        img: "https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg",
+        img: "https://www.cdc.gov/healthypets/images/pets/cute-dog-headshot.jpg?_=42445",
         img_description: "Happy dog",
         title: "A super important article title about Dogs.",
         abstract: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam dicta, sit ex explicabo, suscipit perferendis fuga inventore a alias, temporibus pariatur.",
@@ -37,7 +37,7 @@ const articles = [
     },
     {
         id: 5,
-        img: "http://cdn.akc.org/content/article-body-image/samoyed_puppy_and_girl_.jpg",
+        img: "https://media.allure.com/photos/62b333877389827cf6e080f9/16:9/w_2499,h_1405,c_limit/Is%20it%20ever%20ok%20to%20dye%20your%20dog's%20fur",
         img_description: "A girl and a white dog",
         title: "A super important article title about Dogs.",
         abstract: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam dicta, sit ex explicabo, suscipit perferendis porro eveniet cumque nostrum sapiente dolorem exercitationem eius fuga inventore a alias, temporibus pariatur.",

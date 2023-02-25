@@ -61,7 +61,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 11px 0 0 0;
-    border-top: solid var(--darkGreen) 3px;
+    border-top: solid var(--darkBlue) 3px;
   }
 
   .preview-art-container {
@@ -69,7 +69,7 @@ img {
     margin: 0;
     padding: 0 0 0 11px;
     border-top: none;
-    border-left: solid var(--darkGreen) 3px;
+    border-left: solid var(--darkBlue) 3px;
   }
 
   .preview-art-title {
