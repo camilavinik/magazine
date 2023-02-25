@@ -64,12 +64,14 @@ const randomIdSelector = () => {
   return randomIndex;
 };
 
-// Add five random Ids to randomIds
-for (let i = 0; i < 4; i++) {
+const articlesNumber = isMobileWidth ? 3 : 4
+
+// Add random Ids to randomIds
+for (let i = 0; i < articlesNumber; i++) {
   randomIdsIndex.push(randomIdSelector());
 }
 
-// Render five random articles
+// Render random articles
 // The articles array is defined in data/articles.js
 randomIdsIndex.forEach((index) => {
   const { id, img, img_description, title, abstract } = articles[index];
