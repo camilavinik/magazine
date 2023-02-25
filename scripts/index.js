@@ -17,6 +17,7 @@ const getColumn = (index) => {
 };
 
 // Function to add the article to the HTML
+// TODO: change to handlebars
 const renderArticlePreview = (
   column,
   img,

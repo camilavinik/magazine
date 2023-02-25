@@ -184,17 +184,23 @@ footer {
 
 /* RESPONSIVE DESIGN FOR TABLETS */
 @media (max-width: 768px) {
+  header {
+    padding: 11px 22px;
+    top: 11px;
+    margin: 11px
+  }
+
   #nav {
     position: absolute;
     height: 0;
     right: 0;
-    top: 65px;
+    top: 46px;
     display: flex;
     padding: 0 22px 0 22px;
     border-radius: 0 0 8px 8px;
     flex-direction: column;
     align-items: flex-end;
-    gap: 11px;
+    gap: 6px;
     background-color: var(--white);
     transition: all 0.7s ease;
     overflow: hidden;
@@ -203,11 +209,41 @@ footer {
   .responsive-menu-btn {
     display: block;
   }
+
+  main {
+    margin: 0 11px;
+    gap: 11px;
+  }
+
+  .articles-column {
+    gap: 11px;
+  }
+
+  .preview-art-container {
+    width: calc(100% - 22px);
+    margin: 0 11px;
+  }
+  
+  .preview-art-title {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    margin-top: 11px;
+    padding: 11px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyright {
+    margin-top: 12px;
+    order: 3;
+  }
 }
 
 /* RESPONSIVE DESIGN FOR TABLETS */
 @media (max-width: 480) {
   #nav {
-    width: 100%
+    width: 100%;
   }
 }

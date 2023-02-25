@@ -30,7 +30,7 @@ if (isTabletWidth) {
   let menuIsOpen = false;
 
   menuButton.onclick = () => {
-    nav.style.height = menuIsOpen ? "0" : "128px";
+    nav.style.height = menuIsOpen ? "0" : "113px";
     menuIsOpen = !menuIsOpen;
   };
 }
