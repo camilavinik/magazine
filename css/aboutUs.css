@@ -6,22 +6,43 @@ main {
 
 .person-container {
     width: 100%;
+    height: fit-content;
     background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
-    padding: 24px;
+    gap: 22px;
+    padding: 22px;
     max-width: 750px;
     border-radius: 8px;
 }
 
 .person-image {
     width: 150px;
-    height: 150px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
 }
 
 .right {
     text-align: right;
+}
+
+/* RESPONSIVE DESIGN FOR TABLETS */
+@media (max-width: 768px) {
+    .person-container {
+        gap: 11px;
+        padding: 11px;
+    }
+
+    .person-image {
+        width: 80px;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }
