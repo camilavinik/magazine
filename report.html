@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report</title>
+  </head>
+  <body>
+    <h1>Report</h1>
+    <p>Camila Sánchez</p>
+    <h2>Introduction</h2>
+    <p>
+      The newspaper I developed was inspired by magazine sites and blogs. I
+      wanted to create a magazine, but give it the freshness of a blog, with
+      transparency and a relation between the reader and the writer. I came with
+      the idea of building <strong>WE LOVE PETS</strong> as my cat recently went missing and I
+      got really envolved with the pet community of my local neighbourhood. My
+      cat is finally home and I’ve developed a magazine for the pets lovers
+      community.
+    </p>
+    <h2>Inspiration</h2>
+    <p>
+      <strong>1. Magazine or newspaper display</strong>
+      <br />
+      I felt it was the best way to show all the articles at the home page, as
+      they show multiple articles with captive titles and descriptions. Also the
+      way they suggest you similar articles while you read inspired me to do a
+      similar behavior. For this I took inspiration for this specific newspaper
+      design which I found completely eye-catching.
+      https://dribbble.com/shots/17575967-Newspaper-Fashion-Magazine-06
+      <br />
+      <br />
+      <strong>2. Blogs transparency</strong>
+      <br />
+      I love the way blogs function, how you really trust the person behind all
+      the articles and go there to take decisions about anything you want. That
+      is the same relation I wanted for this website, so I chose to have an
+      informal subject as ‘pets’ and write relatable articles which don’t feel
+      like the common news you will find on a newspaper or magazine.
+      <br />
+      <br />
+      <strong>3. Idk yet</strong>
+    </p>
+    <h2>Accessibility</h2>
+    <p>
+      <strong>1. The site is fully navigable using the keyboard</strong>
+      <br />
+      There is no functionality loose by using just the tab, shift and enter
+      keys of the boards. So users without a mouse can still have the whole
+      experience. This was achieved by using correct HTML tags specially in
+      forms, and a structured HTML.
+      <br />
+      <br />
+      <strong>2. Sightless users can still enjoy the website</strong>
+      <br />
+      The website was prepared for sightless users by using according tags, the
+      pages have a solid structure and every image has a descriptive alt, which
+      is something particularly required when creating an article.
+      <br />
+      <br />
+      <strong>3. Multiple screens support</strong>
+      <br />
+      The website support every screen size from phone to wide desktop screen,
+      to ensure different user have a pleasant time. The use of CSS media
+      queries ensure that different users can have an according display in their
+      screens.
+    </p>
+    <h3>Usability</h3>
+    <p>
+      <strong>1. Use of Navbar and suggested articles</strong>
+      <br />
+      The navbar is a key component for the page usability, as it enables the
+      user to navigate across the whole page with an easy access from everywhere
+      (as the nabber is always present). The only inaccessible page are the
+      article, which they are in the main page and its enough to click on them
+      to go directly to its page, also I have included suggested articles in
+      every article page, so going from one to another is very easy. Thinking of
+      the link, I also created a “not found” page in case you intend to go to an
+      article which doesn’t exists anymore, and in which the page suggests you
+      to go back to home.
+      <br />
+      <br />
+      <strong>2. Search bar</strong>
+      <br />
+      Okay but what happens if I want a specific article type or subject? The
+      searcher is there for that, I have included tags for every article and
+      that is how the search works, if an article have a tag that contains the
+      same text as what it was searched, it will be shown on the search results
+      page. So the user don’t have to specifically see the article on the
+      homepage or in the suggested or another article, it can directly search
+      for what he wants.
+      <br />
+      <br />
+      <strong>3. Design</strong>
+      <br />
+      Lastly design is important for the user to have a nice experience in our
+      page, I got inspired by different dribble magazine and newspaper examples,
+      and searched for palettes and font which are commonly related with news
+      websites and added some css animation for more interactiveness. Using
+      headers, colors, fonts, spacing and animations correctly make the page
+      more user friendly and intuitive to navigate through.
+    </p>
+    <h2>Learning</h2>
+    <p></p>
+    <h2>Evaluation I</h2>
+    <p>
+      I think that the most successful part of the website is it
+      <strong>scalability</strong>, from the beginning the whole website was
+      intended to have new articles everyday, that is why I didn’t want every
+      article to have it own HTML file adapted to the article need.
+      <br />
+      <br />
+      Instead I created a data folder where you can find the articles.js file,
+      this file have all the articles shown with a solid structure to enable
+      correct display, accessibility and usability of the page. So whenever I
+      want to add an article I just need to insert it in the array with all the
+      properties listed in the other ones and that’s it. Is much more easier for
+      non-programmers (and programmers too) to add articles this way, and fill
+      the website with as much articles it wants.
+      <br />
+      <br />
+      Also this way of fetching articles from a constant, is simulating an API
+      response so later in the future an API can be created to fetch and create
+      articles in a much more simpler way, even opening up the possibility to
+      upload articles from the same page. Also the the search and suggested
+      articles feature use this same array to search for the article needed,
+      which in the case of using an API can be way more efficient than now (that
+      is searching in an array in our front-end).
+    </p>
+    <h2>Evaluation II</h2>
+    <strong>1. Usage of articles.js</strong>
+    <br />
+    I really don’t like the solution I used for this, as the main idea was to
+    use a JSON file which is a more accurate solution to what is needed, also I
+    would have liked it to be imported from de JavaScript file. As this couldn’t
+    be possible (explained in learning), I opted for adding a javascript file
+    with an object, and importing it in the HTML.
+    <br />
+    <br />
+    Although this was not the solution I would have wanted, was the best
+    solution for the project sale and timing, so having a server and be able to
+    make imports this way is definitely something I would like to improve in the
+    future.
+    <br />
+    <br />
+    <strong>2. Recommended articles </strong>
+    <br />
+    Right know the recommended articles are a random selection of all the
+    articles available in the page, as this is still a small project I found no
+    need on doing a complex algorithm to recommend things based on similarity,
+    but it is definitely something to improve as the page become wider and with
+    more amount of articles.
+    <br />
+    <br />
+    Improving this algorithm will lead directly in a better user experience
+    which is something we are always interested in.
+    <h2>Resources</h2>
+    <ul>
+        <li>Handlebars</li>
+        <li>ClickUp</li>
+        <li>Git and Github</li>
+        <li>
+            Articles across internet
+            <ul>
+                <li>f</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Appendices</h2>
+  </body>
+</html>
