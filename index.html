@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- TODO: make all meta nice -->
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="We are 'We Love Pets', a magazine dedicated to the good care of our pets."
+    />
+    <meta name="author" content="Camila Sanchez" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Pets, Owners, Animals, Dogs, Cats, Magazine, Blog"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,12 +26,12 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Magazine</title>
+    <title>We Love Pets</title>
   </head>
   <body>
     <header>
       <a class="logo-a">
-        <img src="./assets/logo.png" alt="Magazine Logo" class="logo"/>
+        <img src="./assets/logo.png" alt="Magazine Logo" class="logo" />
       </a>
       <i id="menuButton" class="fa-solid fa-bars responsive-menu-btn"></i>
       <nav id="nav">
@@ -40,6 +48,7 @@
     </header>
     <main>
       <div class="carousel-container" id="carouselContainer">
+        <!-- Banners template to be rendered here -->
         <script id="bannerTemplate" type="template/handlebars">
           <a href="./pages/article.html?id={{id}}" class="banner-container">
             <img
@@ -56,14 +65,22 @@
         <button class="carousel-dot" id="2" />
       </div>
       <div class="main-content">
+        <!-- Article template -->
+        <script id="articlePreviewTemplate" type="template/handlebars">
+          <a href="./pages/article.html?id={{id}}" class="preview-art-container">
+            <img class="preview-art-image" src="{{img}}" alt="{{imgDescription}}"/>
+            <h2 class="title preview-art-title">{{title}}</h2>
+            <p>{{abstract}}</p>
+          </a>
+        </script>
         <div class="articles-column" id="firstColumn">
-          <!-- Filled with javascript -->
+          <!-- Filled articles with javascript -->
         </div>
         <div class="articles-column middle-column" id="secondColumn">
-          <!-- Filled with javascript -->
+          <!-- Filled articles with javascript -->
         </div>
         <div class="articles-column" id="thirdColumn">
-          <!-- Filled with javascript -->
+          <!-- Filled articles with javascript -->
         </div>
       </div>
     </main>

@@ -8,6 +8,9 @@ const article = articles.find((art) => art.id === articleId);
 // If article doesnt exist, redirect to not found page
 if (!article) window.location.href = `${baseUrl}notFound.html`
 
+// Set page browser title
+document.title = article.title;
+
 // Get handlebars article template
 const articleTemplate = document.getElementById(
   "mainArticleTemplate"

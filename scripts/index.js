@@ -17,7 +17,9 @@ const getColumn = (index) => {
 };
 
 // Function to add the article to the HTML
-// TODO: change to handlebars
+const articlePreviewTemplate = document.getElementById("articlePreviewTemplate").innerHTML;
+const compiledArticlePreviewTemplate = Handlebars.compile(articlePreviewTemplate);
+
 const renderArticlePreview = (
   column,
   img,
@@ -26,14 +28,9 @@ const renderArticlePreview = (
   abstract,
   id
 ) => {
-  const articlePreview = `
-  <a href="./pages/article.html?id=${id}" class="preview-art-container">
-    <img class="preview-art-image" src="${img}" alt="${imgDescription}"/>
-    <h2 class="title preview-art-title">${title}</h2>
-    <p>${abstract}</p>
-  </a>`;
+  const renderedPreviewArticle = compiledArticlePreviewTemplate({ img, title, id, imgDescription, abstract });
 
-  column.innerHTML += articlePreview;
+  column.innerHTML += renderedPreviewArticle;
 };
 
 // The articles array is defined in data/articles.js
@@ -75,7 +72,7 @@ let nextBanner = 1;
 // Start timeout to next banner in 10 seconds
 let carouselTimeout = setTimeout(
   () => changeBanner(dotsArray[nextBanner]),
-  15000
+  10000
 );
 
 function changeBanner(dot) {
@@ -101,7 +98,7 @@ function changeBanner(dot) {
   // Timeout to next banner in 10 seconds
   carouselTimeout = setTimeout(
     () => changeBanner(dotsArray[nextBanner]),
-    15000
+    10000
   );
 }
 
