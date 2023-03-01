@@ -58,7 +58,7 @@ const ids = articles.map((art) => art.id);
 // Recursive unique random generator function
 const randomIdSelector = () => {
   // Random index of all ids array
-  const randomIndex = Math.floor(Math.random() * (ids.length - 1));
+  const randomIndex = Math.floor(Math.random() * (ids.length));
   // Corresponding id
   const selectedRandomId = ids[randomIndex];
 
