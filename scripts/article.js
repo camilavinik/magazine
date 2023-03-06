@@ -6,7 +6,7 @@ const articleId = parseInt(urlParams.get("id"));
 const article = articles.find((art) => art.id === articleId);
 
 // If article doesnt exist, redirect to not found page
-if (!article) window.location.href = `${baseUrl}notFound.html`
+if (!article) window.location.href = `${baseUrl}notFound.html`;
 
 // Set page browser title
 document.title = article.title;
@@ -58,7 +58,7 @@ const ids = articles.map((art) => art.id);
 // Recursive unique random generator function
 const randomIdSelector = () => {
   // Random index of all ids array
-  const randomIndex = Math.floor(Math.random() * (ids.length));
+  const randomIndex = Math.floor(Math.random() * ids.length);
   // Corresponding id
   const selectedRandomId = ids[randomIndex];
 
@@ -70,7 +70,7 @@ const randomIdSelector = () => {
   return randomIndex;
 };
 
-const articlesNumber = isMobileWidth ? 3 : 4
+const articlesNumber = isMobileWidth ? 3 : 4;
 
 // Add random Ids to randomIds
 for (let i = 0; i < articlesNumber; i++) {

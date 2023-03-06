@@ -46,7 +46,8 @@
   padding: 22px;
   max-width: 40%;
   top: 0;
-  text-shadow: -1px -1px 0 var(--light), 1px -1px 0 var(--light), -1px 1px 0 var(--light), 1px 1px 0 var(--light);
+  text-shadow: -1px -1px 0 var(--light), 1px -1px 0 var(--light),
+    -1px 1px 0 var(--light), 1px 1px 0 var(--light);
 }
 
 .main-content {
@@ -69,7 +70,7 @@
   .dots-container {
     margin-top: -6px;
   }
-  
+
   .carousel-dot {
     width: 12px;
     height: 12px;
@@ -79,7 +80,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .middle-column {
     border-right: none;
   }
@@ -103,7 +104,7 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  
+
   .middle-column {
     border-left: none;
   }

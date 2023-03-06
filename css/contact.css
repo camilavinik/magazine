@@ -1,57 +1,58 @@
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-container {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 
 .input-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 22px
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
 }
 
 .input-container {
-    width: 100%;
+  width: 100%;
 }
 
-.input-container label{
-    color: var(--darkBlue);
-    margin: 4px;
+.input-container label {
+  color: var(--darkBlue);
+  margin: 4px;
 }
 
 .input {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    margin-top: 4px;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 4px;
 }
 
 .input:focus {
-    outline: 2px solid var(--blue)
+  outline: 2px solid var(--blue);
 }
 
 textarea {
-    resize: none;
-    height: 150px;
+  resize: none;
+  height: 150px;
 }
 
 .submit-button {
-    width: 35%;
+  width: 35%;
 }
 
 /* RESPONSIVE DESIGN FOR TABLETS */
 @media (max-width: 768px) {
-    .form-container, .input-row {
-        gap: 11px;
-    }
+  .form-container,
+  .input-row {
+    gap: 11px;
+  }
 }

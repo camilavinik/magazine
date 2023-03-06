@@ -1,6 +1,6 @@
 // SET CONSTANTS TO DETERMINE DEVICE TYPE
-const isTabletWidth = window.innerWidth <= 768
-const isMobileWidth = window.innerWidth <= 480
+const isTabletWidth = window.innerWidth <= 768;
+const isMobileWidth = window.innerWidth <= 480;
 
 // Access to url params
 const queryString = window.location.search;

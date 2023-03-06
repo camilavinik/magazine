@@ -8,8 +8,8 @@ const thirdColumn = document.getElementById("thirdColumn");
 // Function which returns the column in which the article should be based on index
 const getColumn = (index) => {
   let numberOfColumns = 3;
-  if (isTabletWidth) numberOfColumns = 2
-  if (isMobileWidth) numberOfColumns = 1
+  if (isTabletWidth) numberOfColumns = 2;
+  if (isMobileWidth) numberOfColumns = 1;
 
   if (index % numberOfColumns === 0) return firstColumn;
   if (index % numberOfColumns === 1) return secondColumn;
@@ -17,8 +17,12 @@ const getColumn = (index) => {
 };
 
 // Function to add the article to the HTML
-const articlePreviewTemplate = document.getElementById("articlePreviewTemplate").innerHTML;
-const compiledArticlePreviewTemplate = Handlebars.compile(articlePreviewTemplate);
+const articlePreviewTemplate = document.getElementById(
+  "articlePreviewTemplate"
+).innerHTML;
+const compiledArticlePreviewTemplate = Handlebars.compile(
+  articlePreviewTemplate
+);
 
 const renderArticlePreview = (
   column,
@@ -28,7 +32,13 @@ const renderArticlePreview = (
   abstract,
   id
 ) => {
-  const renderedPreviewArticle = compiledArticlePreviewTemplate({ img, title, id, imgDescription, abstract });
+  const renderedPreviewArticle = compiledArticlePreviewTemplate({
+    img,
+    title,
+    id,
+    imgDescription,
+    abstract,
+  });
 
   column.innerHTML += renderedPreviewArticle;
 };
@@ -37,15 +47,17 @@ const renderArticlePreview = (
 // Create new array same as articles to separate banners from articles
 const filteredArticles = [...articles];
 // Remove first three elements and save them as bannersData, now filteredArticles dont have those
-const bannersData = filteredArticles.splice(0,3);
+const bannersData = filteredArticles.splice(0, 3);
 
 // Render filtered articles
-filteredArticles.forEach(({ img, img_description, title, abstract, id }, index) => {
-  // Set a column
-  const column = getColumn(index);
-  // Add it to the HTML
-  renderArticlePreview(column, img, img_description, title, abstract, id);
-});
+filteredArticles.forEach(
+  ({ img, img_description, title, abstract, id }, index) => {
+    // Set a column
+    const column = getColumn(index);
+    // Add it to the HTML
+    renderArticlePreview(column, img, img_description, title, abstract, id);
+  }
+);
 
 // Set Banners as first three articles
 // Render template and add it to the HTML
@@ -53,10 +65,10 @@ const renderedBanner = document.getElementById("bannerTemplate").innerHTML;
 const renderedBannerTemplate = Handlebars.compile(renderedBanner);
 
 // For the banners: render template and add it to the HTML
-bannersData.forEach(({img, title, id}) => {
+bannersData.forEach(({ img, title, id }) => {
   const renderedBanner = renderedBannerTemplate({ img, title, id });
   document.getElementById("carouselContainer").innerHTML += renderedBanner;
-})
+});
 
 // Carousel
 const dots = document.getElementsByClassName("carousel-dot");
