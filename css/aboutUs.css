@@ -1,14 +1,17 @@
+/* MAIN COMPONENT */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* PAGE DESCRIPTION */
 .description {
   text-align: center;
   max-width: 750px;
 }
 
+/* PEOPLE CARDS */
 .person-container {
   width: 100%;
   height: fit-content;

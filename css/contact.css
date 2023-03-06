@@ -1,9 +1,11 @@
+/* MAIN COMPONENT */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* CONTACT FORM */
 .form-container {
   width: 100%;
   max-width: 600px;

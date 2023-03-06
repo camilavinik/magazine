@@ -1,3 +1,4 @@
+/* BANNER CAROUSEL */
 .carousel-container {
   width: calc(100vw - 88px);
   display: grid;
@@ -50,6 +51,7 @@
     -1px 1px 0 var(--light), 1px 1px 0 var(--light);
 }
 
+/* MAIN DISPLAY */
 .main-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

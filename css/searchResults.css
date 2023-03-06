@@ -1,9 +1,11 @@
+/* MAIN COMPONENT */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* RESULT ARTICLES */
 .result-art-container {
   width: 100%;
   display: flex;
