@@ -1,7 +1,7 @@
-// Get id from query params
+// Get article id from query params
 const articleId = parseInt(urlParams.get("id"));
 
-// Get article with id
+// Get article information with id
 // Articles array is in ../data/articles.js
 const article = articles.find((art) => art.id === articleId);
 
@@ -38,8 +38,8 @@ const suggestedArticleTemplateCompiled = Handlebars.compile(
   suggestedArticleTemplate
 );
 
+// Article render function to render template and add it to the HTML
 const renderArticlePreview = (img, img_description, title, abstract, id) => {
-  // Render template and add it to the HTML
   const suggestedArticleTemplateRendered = suggestedArticleTemplateCompiled({
     img,
     imgDescription: img_description,
@@ -51,7 +51,8 @@ const renderArticlePreview = (img, img_description, title, abstract, id) => {
     suggestedArticleTemplateRendered;
 };
 
-// Select five random articles
+// Select random articles
+
 const randomIdsIndex = [];
 const ids = articles.map((art) => art.id);
 
@@ -70,6 +71,7 @@ const randomIdSelector = () => {
   return randomIndex;
 };
 
+// Set articles amount number
 const articlesNumber = isMobileWidth ? 3 : 4;
 
 // Add random Ids to randomIds

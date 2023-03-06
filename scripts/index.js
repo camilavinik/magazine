@@ -24,6 +24,7 @@ const compiledArticlePreviewTemplate = Handlebars.compile(
   articlePreviewTemplate
 );
 
+// Render article function to render an add to the html
 const renderArticlePreview = (
   column,
   img,
