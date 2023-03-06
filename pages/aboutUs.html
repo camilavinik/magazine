@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Site metadata -->
     <meta charset="UTF-8" />
     <meta
       name="description"
@@ -13,6 +14,7 @@
       name="keywords"
       content="Pets, Owners, Animals, Dogs, Cats, Magazine, Blog"
     />
+    <!-- Import icons and fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,20 +25,26 @@
       src="https://kit.fontawesome.com/92c4329b97.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Import stylesheets -->
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/aboutUs.css" />
     <title>About Us</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
+      <!-- Logo -->
       <a href="../index.html" class="logo-a">
         <img src="../assets/logo.png" alt="Magazine Logo" class="logo" />
       </a>
+      <!-- Menu icon for smaller screens -->
       <i id="menuButton" class="fa-solid fa-bars responsive-menu-btn"></i>
+      <!-- Menu options -->
       <nav id="nav">
         <a href="../index.html"><p class="nav-item">Home</p></a>
         <a><p class="nav-item selected">About us</p></a>
         <a href="./contact.html"><p class="nav-item">Contact</p></a>
+        <!-- Search form -->
         <form id="searchForm" class="search-container">
           <input type="text" class="search" />
           <button class="search-button">
@@ -45,7 +53,9 @@
         </form>
       </nav>
     </header>
+    <!-- MAIN PAGE CONTENT -->
     <main>
+      <!-- Page title and description -->
       <div>
         <h1 class="title page-title">about us</h1>
         <p class="description">
@@ -53,6 +63,7 @@
           is to spread the good care and love of animals. Get to know our team:
         </p>
       </div>
+      <!-- People information and image -->
       <div class="person-container">
         <div>
           <h2 class="title">Camila Sánchez</h2>
@@ -69,6 +80,7 @@
           alt="Camila Sánchez"
         />
       </div>
+      <!-- People information and image -->
       <div class="person-container">
         <img
           class="person-image"
@@ -85,6 +97,7 @@
           </p>
         </div>
       </div>
+      <!-- People information and image -->
       <div class="person-container">
         <div>
           <h2 class="title">Camila Martínez</h2>
@@ -101,17 +114,22 @@
         />
       </div>
     </main>
+    <!-- FOOTER -->
     <footer>
+      <!-- Phone -->
       <div class="footer-info">
         <i class="fa-solid fa-phone"></i>
         <p>+598 983 303 945</p>
       </div>
+      <!-- Copyright -->
       <p class="copyright">MAGAZINE 2023 ©</p>
+      <!-- Email -->
       <div class="footer-info">
         <i class="fa-solid fa-envelope"></i>
         <p>contact@magazine.com</p>
       </div>
     </footer>
   </body>
+  <!-- SCRIPT IMPORT -->
   <script src="../scripts/common.js"></script>
 </html>

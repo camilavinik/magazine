@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Site metadata -->
     <meta charset="UTF-8" />
     <meta
       name="description"
@@ -13,6 +14,7 @@
       name="keywords"
       content="Pets, Owners, Animals, Dogs, Cats, Magazine, Blog"
     />
+    <!-- Import icons and fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,21 +25,28 @@
       src="https://kit.fontawesome.com/92c4329b97.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Import handlebars -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- Import stylesheets -->
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>We Love Pets</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
+      <!-- Logo -->
       <a class="logo-a">
         <img src="./assets/logo.png" alt="Magazine Logo" class="logo" />
       </a>
+      <!-- Menu icon for smaller screens -->
       <i id="menuButton" class="fa-solid fa-bars responsive-menu-btn"></i>
+      <!-- Menu options -->
       <nav id="nav">
         <a><p class="nav-item selected">Home</p></a>
         <a href="./pages/aboutUs.html"><p class="nav-item">About us</p></a>
         <a href="./pages/contact.html"><p class="nav-item">Contact</p></a>
+        <!-- Search form -->
         <form id="searchForm" class="search-container">
           <input type="text" class="search" />
           <button class="search-button">
@@ -46,9 +55,10 @@
         </form>
       </nav>
     </header>
+    <!-- MAIN PAGE CONTENT -->
     <main>
       <div class="carousel-container" id="carouselContainer">
-        <!-- Banners template to be rendered here -->
+        <!-- Banner handlebars template -->
         <script id="bannerTemplate" type="template/handlebars">
           <a href="./pages/article.html?id={{id}}" class="banner-container">
             <img
@@ -58,14 +68,16 @@
             <h1 class="banner-title title">{{title}}</h1>
           </a>
         </script>
+        <!-- Banners template to be rendered here -->
       </div>
+      <!-- Banner control buttons -->
       <div class="dots-container">
         <button class="carousel-dot selected" id="0" />
         <button class="carousel-dot" id="1" />
         <button class="carousel-dot" id="2" />
       </div>
       <div class="main-content">
-        <!-- Article template -->
+        <!-- Article handlebars template -->
         <script id="articlePreviewTemplate" type="template/handlebars">
           <a href="./pages/article.html?id={{id}}" class="preview-art-container">
             <img class="preview-art-image" src="{{img}}" alt="{{imgDescription}}"/>
@@ -73,29 +85,35 @@
             <p>{{abstract}}</p>
           </a>
         </script>
+        <!-- Articles columns -->
         <div class="articles-column" id="firstColumn">
-          <!-- Filled articles with javascript -->
+          <!-- Filled articles with handlebars template -->
         </div>
         <div class="articles-column middle-column" id="secondColumn">
-          <!-- Filled articles with javascript -->
+          <!-- Filled articles with handlebars template -->
         </div>
         <div class="articles-column" id="thirdColumn">
-          <!-- Filled articles with javascript -->
+          <!-- Filled articles with handlebars template -->
         </div>
       </div>
     </main>
+    <!-- FOOTER -->
     <footer>
+      <!-- Phone -->
       <div class="footer-info">
         <i class="fa-solid fa-phone"></i>
         <p>+598 983 303 945</p>
       </div>
+      <!-- Copyright -->
       <p class="copyright">MAGAZINE 2023 ©</p>
+      <!-- Email -->
       <div class="footer-info">
         <i class="fa-solid fa-envelope"></i>
         <p>contact@magazine.com</p>
       </div>
     </footer>
   </body>
+  <!-- SCRIPTS IMPORTS -->
   <script src="data/articles.js"></script>
   <script src="scripts/common.js"></script>
   <script src="scripts/index.js"></script>

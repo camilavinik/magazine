@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Site metadata -->
     <meta charset="UTF-8" />
     <meta
       name="description"
@@ -13,6 +14,7 @@
       name="keywords"
       content="Pets, Owners, Animals, Dogs, Cats, Magazine, Blog"
     />
+    <!-- Import icons and fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,22 +25,29 @@
       src="https://kit.fontawesome.com/92c4329b97.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Import handlebars -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- Import stylesheets -->
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/article.css" />
     <!-- Change title with javascript -->
     <title>We Love Pets</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
+      <!-- Logo -->
       <a href="../index.html" class="logo-a">
         <img src="../assets/logo.png" alt="Magazine Logo" class="logo" />
       </a>
+       <!-- Menu icon for smaller screens -->
       <i id="menuButton" class="fa-solid fa-bars responsive-menu-btn"></i>
+      <!-- Menu options -->
       <nav id="nav">
         <a href="../index.html"><p class="nav-item">Home</p></a>
         <a href="./aboutUs.html"><p class="nav-item">About us</p></a>
         <a href="./contact.html"><p class="nav-item">Contact</p></a>
+        <!-- Search form -->
         <form id="searchForm" class="search-container">
           <input type="text" class="search" />
           <button class="search-button">
@@ -47,16 +56,21 @@
         </form>
       </nav>
     </header>
+    <!-- MAIN PAGE CONTENT -->
     <main>
       <div class="main-article-container" id="mainArticle">
+        <!-- Handlebars main article template -->
         <script type="template/handlebars" id="mainArticleTemplate">
           <h1 class="title">{{title}}</h1>
           <p>{{abstract}}</p>
           <img src={{img}} alt={{imgDescription}} />
           <p>{{{mainArticle}}}</p>
         </script>
+        <!-- Article template to be rendered right here -->
       </div>
+      <!-- Suggested articles column -->
       <div id="articlesColumn" class="articles-column">
+        <!-- Handlebars suggested article template -->
         <script type="template/handlebars" id="suggestedArticleTemplate">
           <a href="./article.html?id={{id}}" class="preview-art-container">
             <img class="preview-art-image" src="{{img}}" alt="{{imgDescription}}"/>
@@ -64,20 +78,26 @@
             <p class="abstract">{{abstract}}</p>
           </a>
         </script>
+        <!-- Suggested articles template to be rendered right here -->
       </div>
     </main>
+    <!-- FOOTER -->
     <footer>
+      <!-- Phone -->
       <div class="footer-info">
         <i class="fa-solid fa-phone"></i>
         <p>+598 983 303 945</p>
       </div>
+      <!-- Copyright -->
       <p class="copyright">MAGAZINE 2023 ©</p>
+      <!-- Email -->
       <div class="footer-info">
         <i class="fa-solid fa-envelope"></i>
         <p>contact@magazine.com</p>
       </div>
     </footer>
   </body>
+  <!-- SCRIPTS IMPORTS -->
   <script src="../data/articles.js"></script>
   <script src="../scripts/common.js"></script>
   <script src="../scripts/article.js"></script>
