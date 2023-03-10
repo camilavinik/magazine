@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="report/styles.css" />
     <title>Report</title>
   </head>
   <body>
     <h1>Report</h1>
-    <p>Camila Sánchez</p>
+    <h1>Camila Sánchez</h1>
     <h2>Introduction</h2>
     <p>
       The newspaper I developed was inspired by magazine sites and blogs. I
@@ -26,9 +27,22 @@
       I felt it was the best way to show all the articles at the home page, as
       they show multiple articles with captive titles and descriptions. Also the
       way they suggest you similar articles while you read inspired me to do a
-      similar behavior. For this I took inspiration for this specific newspaper
-      design which I found completely eye-catching.
-      https://dribbble.com/shots/17575967-Newspaper-Fashion-Magazine-06
+      similar behavior. For this I took inspiration from two specific newspaper
+      designs which I found both completely eye-catching.
+    </p>
+    <ul>
+      <li>
+        <a href="https://dribbble.com/shots/17575967-Newspaper-Fashion-Magazine-06">
+          https://dribbble.com/shots/17575967-Newspaper-Fashion-Magazine-06
+        </a>
+      </li>
+      <li>
+        <a href="https://dribbble.com/shots/17048839-365-Magazine">
+          https://dribbble.com/shots/17048839-365-Magazine
+        </a>
+      </li>
+    </ul>
+    <p>
       <br />
       <br />
       <strong>2. Blogs transparency</strong>
@@ -40,7 +54,20 @@
       like the common news you will find on a newspaper or magazine.
       <br />
       <br />
-      <strong>3. Idk yet</strong>
+      <strong>3. About and Contact</strong>
+      <br />
+      Lastly, the <strong>about us</strong> and
+      <strong>contact</strong> sections where bost inspired by how nowadays
+      companies manage to have contact with potential clients or employees. That
+      is why I decided to add both sections on the website. The
+      <strong>about us</strong> page has it role for knowing what kind of
+      company and vision we have, for potentially attract people who wants to
+      help by working or investing here. And the <strong>contact</strong> page
+      make it's role for making this contact a realthing, everyone who whant to
+      say something can simply complete a form. This form is not currently
+      working as it would need a backend integration, but the structure is
+      prepared to handle that as soon as something like that is added. But
+      unfortunately that last exceeded the course and time proposed.
     </p>
     <h2>Accessibility</h2>
     <p>
@@ -102,7 +129,59 @@
       more user friendly and intuitive to navigate through.
     </p>
     <h2>Learning</h2>
-    <p></p>
+    <p>
+      <strong>1. JSON import</strong>
+      <br />
+      This idea will also be covered later in the evaluation section,
+      <br />
+      As part of the project, importing JSON files to the javascript code was
+      part of the key code for creating a website, as it was the best way to
+      simulate an API call. After multiple efforts on trying to implement an
+      import on javascript (something I was used to working with React) I came
+      across with the fact that that was not possible without a server or using
+      a library, as it was continuously giving me CORS errors. This is something
+      that made me re think the strategy for this implementation, and I got to
+      know the scope of a webapp without a server. I finally solve that problem
+      with a different strategy, importing a javascript file in the HTLM with
+      the JSON as an object, but I got to learn the impact of servers and how
+      much working with React changed things.
+      <br />
+      <br />
+      <strong>2. Handlebars</strong>
+      <br />
+      Although this library was shown in the course, I still got to practice
+      with it and try multiple times after I finally got it working in a way I
+      was comfortable with. At first it felt like I was using more code that I
+      would just inserting the HTML from vanilla javascript, plus the HTML was
+      not being as readable as I wanted it to be, but after multiple YouTube
+      videos, the Handlebars documentation and some creativity, I came to a
+      solution were I found the value of using it. I didn’t create a container
+      for where the template was going to be rendered and instead, I used the
+      same parent container containing the script with the template, this helped
+      me understand better the code as I was feeling that the HTML was not
+      clearing enough having the script tag and the destination container
+      separated.
+      <br />
+      <br />
+      <strong>3. Device test</strong>
+      <br />
+      Device testing when working for mobile accessible website I something I
+      learned and found it utility. The problem came when working using chrome
+      tools with mobile sizes the webpage worked just fine, but after deploying
+      with Coursera and opening it from an actual phone, some features (more
+      specifically the banners) where broken, they were too large for the phone
+      screen size. I here discovered two things, the importance of testing with
+      the deployed webpage and the correct device, and that I needed something
+      more likely to a phone than Google Chrome to help me develop, as the only
+      way to investigate this issue was on the deployed version on the phone and
+      redeploying was too much work for just debugging.I then find the utility
+      of working with Xcode, this app is usually used for developing IOS apps,
+      but was completely useful for testing also website as it offered iPhone
+      simulators, and using these really helped me solve the issue quickly. I
+      opened the safari app on these simulators and opened the project, I was
+      able to find the issue and instantly see my code changes when refreshing,
+      like in web Google Chrome.
+    </p>
     <h2>Evaluation I</h2>
     <p>
       I think that the most successful part of the website is it

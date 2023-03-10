@@ -1,0 +1,12 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    max-width: 750px;
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
