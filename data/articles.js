@@ -1,6 +1,7 @@
 // ARTICLES DATA
 const articles = [
   {
+    // Article adapted from: https://www.helpguide.org/articles/healthy-living/joys-of-owning-a-cat.htm#:~:text=Owning%20a%20cat%20can%20bring,be%20an%20extremely%20rewarding%20relationship
     // Article id (Integer)
     id: 1,
     // Article image (String) as a link
@@ -18,6 +19,7 @@ const articles = [
     tags: ["cats", "own", "reasons"],
   },
   {
+    // Article adapted from: https://www.reuters.com/lifestyle/tattooed-mexican-cat-seeks-new-home-after-life-behind-bars-2023-02-23/
     // Article id (Integer)
     id: 2,
     // Article image (String) as a link
@@ -36,6 +38,7 @@ const articles = [
     tags: ["sphynx", "cats", "prison", "tatoo"],
   },
   {
+    // Article adapted from: https://4animalmagnetism.com/2019/05/01/the-pros-and-cons-of-owning-a-pet-snake/
     // Article id (Integer)
     id: 3,
     // Article image (String) as a link
@@ -53,6 +56,7 @@ const articles = [
     tags: ["snakes", "pros", "cons", "exotic"],
   },
   {
+    // Article adapted from: http://miperroesunico.com/content/el-top-10-de-razas-de-perros-en-2023
     // Article id (Integer)
     id: 4,
     // Article image (String) as a link
@@ -71,6 +75,7 @@ const articles = [
     tags: ["2023", "breeds", "popular", "adopt", "dogs"],
   },
   {
+    // Article adapted from: https://www.semana.com/4patas/perros/articulo/es-cierto-que-los-perros-se-parecen-a-sus-duenos/202235/
     // Article id (Integer)
     id: 5,
     // Article image (String) as a link
@@ -89,6 +94,7 @@ const articles = [
     tags: ["owners", "dogs", "personality", "similar"],
   },
   {
+    // Article adapted from: https://www.advance-affinity.com/es/es/gato/consejos/8-consejos-para-banar-a-un-gato
     // Article id (Integer)
     id: 6,
     // Article image (String) as a link
@@ -107,6 +113,7 @@ const articles = [
     tags: ["shower", "cats", "bath"],
   },
   {
+    // Article adapted from: https://ontariospca.ca/blog/what-to-know-before-adopting-a-hedgehog/
     // Article id (Integer)
     id: 7,
     // Article image (String) as a link
@@ -125,6 +132,7 @@ const articles = [
     tags: ["hedgehog", "all you need to know", "exotic"],
   },
   {
+    // Article adapted from: https://www.lavanguardia.com/cribeo/fauna/20230111/8675825/historia-chiquito-perro-convertido-heroe-rescatar-dueno-gato-incendio.html
     // Article id (Integer)
     id: 8,
     // Article image (String) as a link
@@ -143,6 +151,7 @@ const articles = [
     tags: ["hero", "dogs", "fire", "superhero", "save", "owner"],
   },
   {
+    // Article adapted from: https://www.consumer.es/mascotas/parques-para-perros-seis-errores-que-cometemos.html
     // Article id (Integer)
     id: 9,
     // Article image (String) as a link
